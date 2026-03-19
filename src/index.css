@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 6%;
+    --foreground: 40 10% 90%;
+
+    --card: 0 0% 9%;
+    --card-foreground: 40 10% 90%;
+
+    --popover: 0 0% 9%;
+    --popover-foreground: 40 10% 90%;
+
+    --primary: 36 90% 55%;
+    --primary-foreground: 0 0% 6%;
+
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 40 10% 80%;
+
+    --muted: 0 0% 14%;
+    --muted-foreground: 0 0% 50%;
+
+    --accent: 36 90% 55%;
+    --accent-foreground: 0 0% 6%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 0 0% 16%;
+    --input: 0 0% 16%;
+    --ring: 36 90% 55%;
+
+    --radius: 0.5rem;
+
+    --font-display: 'Space Grotesk', sans-serif;
+    --font-body: 'Inter', sans-serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: hsl(36, 90%, 55%);
+  color: hsl(0, 0%, 6%);
+}
