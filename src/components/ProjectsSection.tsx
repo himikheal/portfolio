@@ -89,7 +89,7 @@ const ProjectsSection = () => {
                       </span>
                     )}
                   </div>
-                  <p className="text-muted-foreground leading-relaxed mb-4 max-w-xl">
+                  <p className="text-muted-foreground leading-relaxed mb-4">
                     {project.description}
                   </p>
                   <div className="flex gap-3 flex-wrap">
@@ -115,7 +115,7 @@ const ProjectsSection = () => {
                       </span>
                     )}
                   </div>
-                  <p className="text-muted-foreground leading-relaxed mb-4 max-w-xl">
+                  <p className="text-muted-foreground leading-relaxed mb-4">
                     {project.description}
                   </p>
                   <div className="flex gap-3 flex-wrap">
