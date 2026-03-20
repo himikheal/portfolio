@@ -18,9 +18,12 @@ const AboutSection = () => {
           viewport={{ once: true }}
           className="text-2xl md:text-3xl font-display leading-snug font-light"
         >
-          I'm a designer and developer who believes great products come from the intersection of{" "}
-          <span className="text-primary">restraint</span> and{" "}
-          <span className="text-primary">intention</span>. With 8+ years of experience, I help teams ship products that feel effortless.
+          I'm a software developer with a passion for learning and building well-crafted solutions.
+          I'm committed to growing both technically and personally, always looking to improve as a{" "}
+          <span className="text-primary"> developer </span> and{" "}
+          <span className="text-primary"> collaborator</span>.
+          I have a love for music and an interest in nutrition.
+          If you'd like to connect or explore opportunities to collaborate, I'd love to hear from you.
         </motion.p>
       </div>
     </section>

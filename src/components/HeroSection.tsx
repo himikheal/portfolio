@@ -10,7 +10,7 @@ const HeroSection = () => {
           transition={{ duration: 0.6 }}
           className="text-primary font-display text-sm tracking-[0.3em] uppercase mb-6"
         >
-          Designer & Developer
+          Software Developer
         </motion.p>
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
@@ -18,9 +18,9 @@ const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.15 }}
           className="font-display text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[0.95]"
         >
-          Alex
+          Michael
           <br />
-          <span className="text-muted-foreground">Morgan</span>
+          <span className="text-muted-foreground">Zhang</span>
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -28,7 +28,7 @@ const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="mt-8 text-muted-foreground text-lg max-w-md leading-relaxed font-body"
         >
-          Crafting digital experiences with clean code and thoughtful design. Based in San Francisco.
+          Building software I would use. Currently interested in full-stack development and machine learning.
         </motion.p>
         <motion.div
           initial={{ opacity: 0 }}

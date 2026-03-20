@@ -13,13 +13,13 @@ const ContactSection = () => {
           Get in Touch
         </motion.h2>
         <motion.a
-          href="mailto:hello@alexmorgan.dev"
+          href="mailto:business.mzhang@gmail.com"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="font-display text-3xl md:text-5xl font-semibold hover:text-primary transition-colors"
         >
-          hello@alexmorgan.dev
+          business.mzhang@gmail.com
         </motion.a>
         <motion.div
           initial={{ opacity: 0 }}
@@ -28,13 +28,19 @@ const ContactSection = () => {
           transition={{ delay: 0.2 }}
           className="mt-12 flex gap-8"
         >
-          {["GitHub", "LinkedIn", "Twitter"].map((link) => (
+          {[
+            { name: "GitHub", url: "https://github.com/himikheal/" },
+            { name: "LinkedIn", url: "https://www.linkedin.com/in/michael-zhang-url/" },
+            { name: "Resume", url: "/resume.pdf" },
+          ].map((link) => (
             <a
-              key={link}
-              href="#"
+              key={link.name}
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-muted-foreground text-sm tracking-wider uppercase hover:text-primary transition-colors"
             >
-              {link}
+              {link.name}
             </a>
           ))}
         </motion.div>
